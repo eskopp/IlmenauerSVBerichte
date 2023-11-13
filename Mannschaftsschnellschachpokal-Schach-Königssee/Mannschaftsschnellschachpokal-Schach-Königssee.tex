@@ -1,0 +1,106 @@
+\documentclass[a4paper,german]{tui-algo-seminar}
+\usepackage{graphicx}
+\usepackage{algorithm2e}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[lastpage,user]{zref}
+\usepackage{totpages}  % Paket für die Gesamtseitenzahl
+\setlength{\footskip}{13.0pt} % keine Ahnung ^^
+%\usepackage{chessboard}
+\newcommand{\inhalt}{29. Mannschafts Schnellschach Pokalturnier in Königssee 2023}
+\seminar{\inhalt}
+\semester{\today}
+\title{\inhalt}
+\usepackage[utf8]{inputenc}
+\usepackage{xskak,chessboard}
+\renewcommand{\comment}[1]{} % Diese Zeile auskommentieren oder umbenennen
+%   \nolinenumbers
+\author{Erik Skopp}
+
+\usepackage{fancyhdr}  % Für individuelle Kopf- und Fußzeilen
+
+% Definiere den Seitenstil
+\pagestyle{fancy}
+\fancyhf{}  % Lösche vorherige Kopf- und Fußzeilen-Einstellungen
+\fancyfoot[Rf]{\thepage ~von \zpageref{LastPage}}  % Gesamtseitenzahl
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+Bericht über das \inhalt
+\end{abstract}
+
+\section{Bericht}
+Jedes Jahr am Tag der deutschen Einheit findet in Königsee das Mannschaftspokal-Turnier statt. In diesem Jahr traten neben Ilmenau fünf weitere Mannschaften an. Die Teilnehmerliste umfasste Thüringia Königsee als Gastgeber, Blau-Weiß Stadtilm als Titelverteidiger, SV Stützerbach, 1. SV Pößneck und SG Arnstadt Stadtilm. Jeder Spieler hatte 20 Minuten Bedenkzeit pro Partie. Gespielt wurde in Mannschaften, die jeweils aus vier Mitgliedern bestanden. Zusätzlich konnte pro Mannschaft ein Gastspieler eingesetzt werden.
+
+Für Ilmenau traten folgende Spieler an: Ainur Ziganshin an Brett 1, Stefan Schenk an Brett 2, Erik Skopp an Brett 3 und Hanna Görlach an Brett 4.
+
+In der ersten Runde standen wir Arnstadt-Stadtilm gegenüber. Während Brett 3 schnell einen Sieg verzeichnete, endete das vierte Brett mit einer Niederlage. An den ersten beiden Brettern wurde hart gekämpft, doch Stefan und Ainur mussten sich aufgrund der knappen Bedenkzeit geschlagen geben.
+
+Der Start der zweiten Runde gegen den Ausrichter Thuringia Königsee verlief nicht reibungslos. Stefan kämpfte noch mit der Bedenkzeit, und die Bretter 2 und 3 gingen ebenfalls verloren. Lediglich Ainur am ersten Brett konnte sich mit einer Restbedenkzeit von nur 10 Sekunden einen Sieg erkämpfen.
+
+Nachdem wir in den ersten beiden Runden Niederlagen hinnehmen mussten, trafen wir in der dritten Runde auf den Titelfavoriten Blau Weiß Stadtilm, der zu diesem Zeitpunkt weder einen Brettpunkt noch einen Mannschaftspunkt abgegeben hatte. Hanna führte an Brett 4 eine ausgeglichene Partie gegen Uwe Mehlhorn, der zwar am Ende siegte, jedoch in verschiedenen Aspekten kämpfen musste. An den Brettern 1 und 2 wurden unbekannte Stellungen auf Zeit verloren. An Brett 3 ereignete sich folgende Stellung: Weiß hatte hier deutliche Vorteile. Der aktive Läufer stärkte die Stellung und setzte den schwarzen Freibauern auf g4 unter Druck. Leider unterlief Erik in Zeitnot ein Fehler, als er f4 spielte. Die Idee dahinter war, einen Tausch der Bauern auf d5 und e3 zu ermöglichen, und er ging davon aus, dass das schwarze Schach keinen Erfolg bringen würde. Leider irrte er sich. Nach f5 wurde Qxe3+ Kf1 Qe1+ gespielt. Das Problem war offensichtlich: Nach f5 deckte der schwarze Läufer das Feld h2. Dies ermöglichte nach Qg1 Qxg1+ Kxg1 Bf4 und führte zur Aufgabe. Eine bedauerliche Geschichte, die in der Zeitnot übersehen wurde.
+
+In der vierten Runde traten wir gegen SV Stützerbach an. An Brett 1 konnte Ainur einen problemlosen Sieg einfahren. Leider verlor Stefan an Brett 2 aufgrund von Zeitproblemen gegen Franz Handschuh. Die Partie zwischen Erik und seinem Gegner wurde nicht beendet, da ein Teamkamerad aus Stützerbach gesundheitliche Probleme hatte. In einem Akt der Solidarität einigten wir uns auf ein Remis, um dem Schachfreund zu helfen. Hanna erkämpfte sich an Brett 4 in einer soliden Partie ein Remis.
+
+In der letzten Runde standen wir dem 1. SV Pößneck gegenüber und konnten diesen komplett besiegen. Wir gewannen 4:0 gegen Pößneck.
+
+Am Ende des Turniers belegten wir den vierten Platz von sechs teilnehmenden Mannschaften. Den Turniersieg sicherte sich die Mannschaft von Blau Weiß Stadtilm.\\
+\\
+Erik Skopp
+
+
+\section{Tabelle}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Brett    & Spieler         & Punkte  \\
+\hline
+1. Brett & Ainur Ziganshin & 3/5     \\
+\hline
+2. Brett & Stefan Schenk   & 1/5     \\
+\hline
+3. Brett & Erik Skopp      & 2.5/5   \\
+\hline
+4. Brett & Hanna Görlach   & 0.5 / 5 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Schachstellung}
+\chessboard[setfen=1k6/8/3bqp2/1p1p4/1PpP1Pp1/2P1P3/2B3Q1/6K1 w - - 0 1]\\
+
+Erik Skopp war hier Weiß und Schmidt Daniel war schwarz.
+
+Ein Bild aus ChessBase für die WebSite befindet sich in der Cloud.
+\clearpage
+\section{Analyse}
+
+\begin{verbatim}
+[Event "29. Mannschafts Schnellschach Pokalturnier Königssee 2023"]
+[Site "Königsee"]
+[Date "2023.10.03"]
+[Round "3.3"]
+[White "Skopp, Erik"]
+[Black "Schmitt, Daniel"]
+[Result "0-1"]
+[SetUp "1"]
+[FEN "1k6/8/3bqp2/1p1p4/1PpP1Pp1/2P1P3/2B3Q1/6K1 w - - 0 1"]
+[PlyCount "8"]
+
+1. f5 $4 (1. Kf2 Kc7 2. Qh2 Kc6 3. Qh4) 1... Qxe3+ 2. Kh1 Qe1+ 3. Qg1 Qxg1+ 
+4. Kxg1 Bf4 0-1
+\end{verbatim}
+
+
+\section{Daten}
+\begin{itemize}
+    \item[-] Cloud: \url{https://cloud.ilmenauer-schachverein.de/s/oXqjPWoqbyMLB2N}
+    \item[-] In der Cloud sind Bilder enthalten.
+\end{itemize}
+\end{document}

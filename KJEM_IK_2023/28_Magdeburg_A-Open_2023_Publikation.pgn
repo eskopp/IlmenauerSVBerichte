@@ -1,0 +1,30 @@
+﻿[Event "28. Magdeburg A-Open 2023"]
+[Site "Magdeburg"]
+[Date "2023.10.16"]
+[Round "6.48"]
+[White "Skopp, Erik"]
+[Black "Shevchenko, Igor"]
+[Result "1-0"]
+[ECO "D02"]
+[WhiteElo "1522"]
+[BlackElo "1645"]
+[Annotator "Skopp, Erik"]
+[PlyCount "33"]
+
+1. d4 Nf6 2. Bf4 {Die Grundstellung des Londoner Systems} e6 3. Nf3 c5 {Mit dieser bekannten Seitenlinie versucht Schwarz, der Stellung einen anderen Charakter zu geben.} 4. e3 d5 {Schwarz versucht, mit den Bauern c5 und d5 Druck im Zentrum zu erzeugen, während Weiß auf dem Königsflügel über das Feld e5 Druck erzeugt.} 5. c3 Nbd7 6. Bd3 Be7 7. Nbd2 O-O 8. Ne5 {Beide Spieler haben nun ihre Grundstruktur festgelegt. Aufgrund der dynamischeren Stellung von Weiß steht dieser besser.} a6 {A6 ist ein positioneller Fehler. Weiß möchte offensichtlich am Königsflügel angreifen. Entweder versucht Schwarz mit a5 einen Gegenangriff am Damenflügel oder entwickelt seine Figuren.} (8... a5 9. h4 a4 10. a3 Qb6 {So würde Schwarz noch in der Partie bleiben.}) (8... Nxe5 9. dxe5 Nd7 10. h4 f5 {Auch mit dem Tausch würde Schwarz in der Partie bleiben.}) 9. Qf3 {Die schwarzen Türme und der Läufer auf e7 sind passiv. Weiß hat mehr aktive Figuren.} cxd4 10. exd4 Re8 {Weiß bringt immer mehr Figuren in den Angriff, während Schwarz mit Re8 und a6 planlos umherzieht.} 11. h4 {H4, h5, h6 ist ein bekanntes Motiv. Es aktiviert den Turm auf h1 und versucht, den König hinter der Rochadestellung zu entkorken.} Nf8 12. h5 {Nf8 schließt den Untergang von Schwarz ab. Keine der schwarzen Figuren hat eine Aufgabe. Die weißen Figuren spielen hingegen dynamisch zusammen.} N8d7 13. Qg3 {Weiß steht nun klar auf Gewinn. Alle weißen Figuren sind im Angriff involviert. Selbst der Springer auf d2 kann über die Route Nf3, Ng5 oder Ne5 aktiv mitspielen. Schwarz sollte versuchen, die angreifenden Figuren zu schlagen. Allerdings ist es hier bereits zu spät.} Nxe5 14. dxe5 {Durch das Schlagen mit dem Bauern wird der letzte Verteidiger auf f6 entfernt. Schwarz steht nun dem weißen Königsangriff schutzlos ausgeliefert.} Nd7 15. Bh6 $1 {Die konkrete Drohung des Läufers und der Dame auf g7 zwingen Schwarz zum Handeln. Er muss das Matt abwehren.} g6 (15... Bf8 16. Bxg7 Bxg7 17. h6 {Bf8 ist keine Alternative, da mit h6 die Stellung noch schlechter aussieht und der Turm auf h1 nun wirklich aktiv wird.}) (15... Bg5 {Ist der letzte verzweifelte Versuch, dem Matt zu entkommen.} 16. Bxg5 Qc7 17. Bf4 {Das direkte Matt ist zwar abgewehrt, jedoch fehlt Schwarz nun ein Läufer.}) 16. hxg6 {Das ist keine Option. Nun kommen alle Figuren zu einem harmonischen Spiel.} fxg6 17. Bxg6 $1 {Hier gab Schwarz auf. Schwarz fühlte sich nach der Öffnung nicht wohl in der Partie.} 1-0
+
+
+[Event "28. Magdeburg A-Open 2023"]
+[Site "Magdeburg"]
+[Date "2023.10.17"]
+[Round "7.40"]
+[White "Marnyuk, Serhiy"]
+[Black "Lehmann, Georg"]
+[Result "0-1"]
+[ECO "A13"]
+[WhiteElo "1693"]
+[BlackElo "1524"]
+[Annotator "Skopp, Erik"]
+[PlyCount "46"]
+
+1. b3 d5 2. Bb2 c5 {Das Larsen-System mit Übergang in das Englische mit 1... e6 ist eine seltene Variante.} 3. Nf3 Nc6 4. e3 Nf6 5. c4 {Der Zug ist eine absolute Katastrophe, da Schwarz nun direkt mit d4 (gefolgt von e5) fortsetzen könnte, um einen Keil in die Stellungen zu treiben.} (5. Bb5 Bd7 6. O-O {Eine normale und ruhige Fortsetzung wäre hier angebracht gewesen.}) 5... e6 $2 {gibt den Vorteil aus der Hand. Ein direktes d4! wäre nötig gewesen.} (5... d4 6. a3 e5 {Schwarz steht besser.}) 6. Nc3 {Beide Spieler scheinen sich nicht um die Drohungen zu kümmern. Nach Nc3 ist d4 wieder möglich.} (6. cxd5 exd5 7. Be2 {Auch hier ist die ruhige Variante die bessere, um den Ausgleich zu halten.}) 6... d4 $3 7. exd4 (7. Na4 e5 8. d3 Bd6 {holt für Weiß das Kind nicht aus dem Brunnen.}) 7... cxd4 8. Ne2 {Weiß scheint mit der aggressiven Stellung von Schwarz überfordert zu sein.} e5 9. a3 {Weiß hat offensichtliche Probleme im Zentrum. A3 hindert zwar Läufer und Springer daran, nach b4 zu ziehen. Das ist jedoch egal, da Schwarz im Zentrum die Partie gewinnt.} d3 $1 {Damit ist der Drops gelutscht.} 10. Ng3 e4 11. Bxf6 gxf6 12. Nh4 {Schwarz hat hier bereits die Partie gewonnen. Es ist vollkommen egal, was Weiß spielt.} Nd4 13. Bxd3 exd3 14. O-O Be6 {Die schwarzen Figuren decken das komplette Brett ab, und die weißen Figuren freuen sich auf die nächste Runde.} 15. Qh5 Qc7 16. Rfe1 O-O-O {Weiß versucht noch einmal, seine Figuren besser zu positionieren. Leider gelingt ihm das nicht.} 17. Rab1 Bd6 18. Ne4 Bxh2+ {Und der erste Bauer fällt.} 19. Kh1 Be5 20. Re3 Rhg8 21. Rxd3 h6 $5 22. Nf3 (22. Rxd4 Bxd4) 22... Bg4 23. Qh4 Nf5 {Weiß fühlt sich nach der Eröffnung in der Partie nicht sonderlich wohl.} 0-1
