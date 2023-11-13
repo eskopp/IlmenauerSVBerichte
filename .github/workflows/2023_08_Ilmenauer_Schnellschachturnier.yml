@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_08_Ilmenauer_Schnellschachturnier/**"
-      - ".github/workflows/**"
+     # - ".github/workflows/**"
 
 jobs:
   build:

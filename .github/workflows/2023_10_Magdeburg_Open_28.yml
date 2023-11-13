@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_10_Magdeburg_Open_28/**"
-      - ".github/workflows/**"
+      # - ".github/workflows/**"
 
 jobs:
   build:

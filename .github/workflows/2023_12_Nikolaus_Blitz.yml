@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_12_Nikolaus_Blitz/**"
-      - ".github/workflows/**"
+      # - ".github/workflows/**"
 
 jobs:
   build:

@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_10_Vereinspräsentation_TUIlmenau_WS2324/**"
-      - ".github/workflows/**"
+      # - ".github/workflows/**"
 
 jobs:
   build:

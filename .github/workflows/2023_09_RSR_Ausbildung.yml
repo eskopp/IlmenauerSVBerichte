@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_09_RSR_Ausbildung/**"
-      - ".github/workflows/**"
+      # - ".github/workflows/**"
 
 jobs:
   build:

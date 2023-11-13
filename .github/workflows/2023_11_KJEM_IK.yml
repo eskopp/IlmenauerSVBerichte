@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "2023_11_KJEM_IK/**"
-      - ".github/workflows/**"
+      # - ".github/workflows/**"
 
 jobs:
   build:
