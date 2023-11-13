@@ -1,0 +1,231 @@
+name: 2023_10_Vereinspräsentation_TUIlmenau_WS2324
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "2023_10_Vereinspräsentation_TUIlmenau_WS2324/**"
+      - ".github/workflows/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up LaTeX
+        run: |
+          sudo apt-get install -y texlive-latex-extra
+          sudo apt-get install -y texlive-fonts-recommended
+          sudo apt-get install -y texlive-publishers
+          sudo apt-get install -y texlive-science
+          sudo apt-get install -y texlive-pstricks
+          sudo apt-get install -y texlive-pictures
+          sudo apt-get install -y texlive-metapost
+          sudo apt-get install -y texlive-music
+          sudo apt-get install -y texlive-xetex
+          sudo apt-get install -y texlive-luatex
+          sudo apt-get install -y texlive-games
+          sudo apt-get install -y tree
+
+      - name: Build PDFs
+        run: |
+          cd 2023_10_Vereinspräsentation_TUIlmenau_WS2324
+          pdflatex -interaction=nonstopmode -halt-on-error 2023_10_Vereinspräsentation_TUIlmenau_WS2324.tex
+          ls -aril
+          cp 2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf ../ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf
+          cd ..
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: 2023_10_Vereinspräsentation_TUIlmenau_WS2324
+          path: ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf
+
+      - name: Install WebDAV client
+        run: sudo apt-get install -y davfs2
+
+      - name: File Tree
+        run: tree
+
+      - name: Upload zur ISV Cloud
+        run: |
+          EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
+          USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
+          PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
+        
+        
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+
+
+          case $HTTP_STATUS in
+            201)
+              echo "PDF-Datei wurde erfolgreich hochgeladen."
+              ;;
+            204)
+              echo "PDF-Datei wurde erfolgreich aktualisiert."
+              ;;
+            400)
+              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
+              ;;
+            401)
+              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
+              ;;
+            403)
+              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
+              ;;
+            404)
+              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
+              ;;
+            *)
+              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
+              ;;
+          esac
+
+      - name: Upload zur ESKOPP Cloud
+        run: |
+          EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
+          USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
+          PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
+          
+        
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+
+
+          case $HTTP_STATUS in
+            201)
+              echo "PDF-Datei wurde erfolgreich hochgeladen."
+              ;;
+            204)
+              echo "PDF-Datei wurde erfolgreich aktualisiert. "
+              ;;
+            400)
+              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
+              ;;
+            401)
+              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
+              ;;
+            403)
+              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
+              ;;
+            404)
+              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
+              ;;
+            *)
+              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
+              ;;
+          esac
+
+      - name: Upload zur ISV Cloud Event
+        run: |
+            EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2023_10_Vereinspräsentation_TUIlmenau_WS2324/"
+            USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
+            PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
+            PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
+            
+          
+            HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+  
+  
+            case $HTTP_STATUS in
+              201)
+                echo "PDF-Datei wurde erfolgreich hochgeladen."
+                ;;
+              204)
+                echo "PDF-Datei wurde erfolgreich aktualisiert. "
+                ;;
+              400)
+                echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
+                ;;
+              401)
+                echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
+                ;;
+              403)
+                echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
+                ;;
+              404)
+                echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
+                ;;
+              *)
+                echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
+                ;;
+            esac
+
+      - name: Upload zur ESKOPP Cloud Event
+        run: |
+                EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2023_10_Vereinspräsentation_TUIlmenau_WS2324/"
+                USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
+                PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
+                PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
+                
+              
+                HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+      
+      
+                case $HTTP_STATUS in
+                  201)
+                    echo "PDF-Datei wurde erfolgreich hochgeladen."
+                    ;;
+                  204)
+                    echo "PDF-Datei wurde erfolgreich aktualisiert. "
+                    ;;
+                  400)
+                    echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
+                    ;;
+                  401)
+                    echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
+                    ;;
+                  403)
+                    echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
+                    ;;
+                  404)
+                    echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
+                    ;;
+                  *)
+                    echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
+                    ;;
+                esac
+    
+      - name: Upload zur ESKOPP Latex
+        run: |
+                        EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
+                        USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
+                        PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
+                        PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
+                        
+                      
+                        HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+              
+              
+                        case $HTTP_STATUS in
+                          201)
+                            echo "PDF-Datei wurde erfolgreich hochgeladen."
+                            ;;
+                          204)
+                            echo "PDF-Datei wurde erfolgreich aktualisiert. "
+                            ;;
+                          400)
+                            echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
+                            ;;
+                          401)
+                            echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
+                            ;;
+                          403)
+                            echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
+                            ;;
+                          404)
+                            echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
+                            ;;
+                          *)
+                            echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
+                            ;;
+                        esac
+
+      - name: Git Clean
+        run: |
+            git clean -fX        
