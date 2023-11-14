@@ -56,7 +56,7 @@ jobs:
           EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2023_11_Halloween_Blitz.pdf"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
       
@@ -88,7 +88,7 @@ jobs:
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2023_11_Halloween_Blitz.pdf"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
       
@@ -117,10 +117,10 @@ jobs:
       
       - name: Upload zur ISV Cloud Event
         run: |
-          EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2023_11_Halloween_Blitz/"
+          EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2023_10_Vereinspräsentation_TUIlmenau_WS2324/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2023_11_Halloween_Blitz.pdf"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
       
@@ -149,10 +149,10 @@ jobs:
       
       - name: Upload zur ESKOPP Cloud Event
         run: |
-          EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2023_11_Halloween_Blitz/"
+          EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2023_10_Vereinspräsentation_TUIlmenau_WS2324/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2023_11_Halloween_Blitz.pdf"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
       
@@ -184,7 +184,7 @@ jobs:
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2023_11_Halloween_Blitz.pdf"
+          PDF_FILE="ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
       
