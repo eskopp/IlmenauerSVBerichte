@@ -1,0 +1,12 @@
+issue_template:
+  - name: Fehler melden
+    about: Melden Sie einen Fehler in einem Bericht
+    title: "[FEHLER] "
+    labels: bug
+    assignees: ''
+
+  - name: Berichtsanfrage
+    about: Melden Sie das Fehlen eines Berichts
+    title: "[FEHLT] "
+    labels: fehlt
+    assignees: ''
