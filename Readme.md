@@ -142,3 +142,5 @@ Nun beginnt der Upload der Datei in die verschiedenen Ordner der Nextcloud. Die 
           fi
 
 ```
+
+Die erstellten Berichte werden anschließend mit dem WebDav-Protokoll verschlüsselt und in die entsprechenden Ordner der Clouds abgelegt, sodass Sie darauf zugreifen können.
