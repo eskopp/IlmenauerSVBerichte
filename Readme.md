@@ -1,6 +1,13 @@
 # Ilmenauer SV
 Verschiedene Berichte von Turnieren und anderen Veranstaltungen. Alle Berichte sind in der [Ilmenauer Schachverein Cloud](https://cloud.ilmenauer-schachverein.de) verfügbar.  
 
+## Fehler 
+Sie können jederzeit einen Fehler melden. Unter dem Reiter [Issue](https://github.com/eskopp/IlmenauerSV/issues) können Sie alle gemeldeten Fehler einsehen. Alternativ können Sie selbst einen Fehler melden. Drücken Sie einfach auf die Art des Fehlers, den Sie melden möchten.
+1. [Ich möchte einen Fehler melden](https://github.com/eskopp/IlmenauerSV/issues/new?assignees=&labels=bug&projects=&template=fehler_melden.md&title=%5BFEHLER%5D+)
+2. [Ich möchte einen fehlenden Bericht melden](https://github.com/eskopp/IlmenauerSV/issues/new?assignees=&labels=fehlt&projects=&template=new_bericht.md&title=%5BFEHLT%5D+)
+3. [Ich möchte einen allgemeinen Fehler melden](https://github.com/eskopp/IlmenauerSV/issues/new) 
+
+
 ## Inhalt
 | Monat   | Event                                  | Link |
 |---------|----------------------------------------|------|
@@ -16,7 +23,7 @@ Verschiedene Berichte von Turnieren und anderen Veranstaltungen. Alle Berichte s
 | 12.2023 | 1. Nikolaus Blitz 2023                 |  [Link](2023_12_Nikolaus_Blitz)    |
 
 
-# Git 
+## Git 
 Sie können sich das Git hier herunterladen: [https://github.com/eskopp/IlmenauerSV/archive/refs/heads/main.zip](https://github.com/eskopp/IlmenauerSV/archive/refs/heads/main.zip)
 
 Alternativ können Sie das Git-Repository clonen:
@@ -35,7 +42,7 @@ git@github.com:eskopp/IlmenauerSV.git
 
 Wenn Sie möchten, können Sie eigene Berichte für den Ilmenauer Schachverein einreichen oder an anderen Projekten mitarbeiten. Es ist auch möglich, Fehler zu melden. Nutzen Sie dazu bitte das Formular für ein Issue, um uns die Bearbeitung zu erleichtern.
 
-# LaTeX
+## LaTeX
 LaTeX wird jedes Mal in einer Linux-VM neu installiert, um sicherzustellen, dass es zu keinen Altlasten im System kommt. Alle Berichte werden mit LaTeX wie folgt erstellt:
 
 ```bash
@@ -44,7 +51,7 @@ LaTeX wird jedes Mal in einer Linux-VM neu installiert, um sicherzustellen, dass
 Da es sich nicht um eine wissenschaftliche Arbeit handelt und nur um einfache Berichte geht, wird bewusst auf ``biber`` und ähnliche Tools verzichtet.
 
 
-# Workflows
+## Workflows
 Die Workflows werden bei zwei verschiedenen Events innerhalb eines ``pull`` getriggert:
 
 1. Der Bericht oder eine Datei im Ordner wird geändert, gelöscht oder erstellt.
