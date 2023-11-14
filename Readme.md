@@ -11,5 +11,6 @@ Verschiedene Berichte von Turnieren und anderen Veranstaltungen. Alle Berichte s
 | 10.2023 | Mannschaft Schnellschach Königsee 2023 |  [Link](2023_10_Mannschaftsschnellschachpokal-Schach-Königssee)    |
 | 10.2023 | RSR Ausbildung Prüfungsergebnisse      |  [Link](2023_10_RSR_Ausbildung_Nachtrag)    |
 | 10.2023 | Vereinspräsentation TU Ilmenau WS23/24 |  [Link](2023_10_Vereinspräsentation_TUIlmenau_WS2324)    |
-| 11.2023 | 1. Halloween Blitz 2023                |  [Link](2023_11_KJEM_IK)    |
+| 11.2023 | 1. Halloween Blitz 2023                |  [Link](2023_11_Halloween_Blitz)    |
+| 11.2023 | Kreiseinzelmeisterschaft der Jugend U10-U18 2023             |  [Link](2023_11_KJEM_IK)    |
 | 12.2023 | 1. Nikolaus Blitz 2023                 |  [Link](2023_12_Nikolaus_Blitz)    |
