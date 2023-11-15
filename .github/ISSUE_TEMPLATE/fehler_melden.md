@@ -14,8 +14,8 @@ Verlinken Sie den Bericht, in dem der Fehler aufgetreten ist.
 
 **Schritte zur Reproduktion (falls anwendbar):**
 1. Gehen Sie zu '...'
-2. Klicken Sie auf '....'
-3. Scrollen Sie nach unten zu '....'
+2. Klicken Sie auf '...'
+3. Scrollen Sie nach unten zu '...'
 4. Sehen Sie den Fehler
 
 **Erwartetes Verhalten:**
