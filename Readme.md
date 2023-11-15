@@ -45,8 +45,14 @@ Wenn Sie möchten, können Sie eigene Berichte für den Ilmenauer Schachverein e
 
 ## LaTeX
 LaTeX wird jedes Mal in einer Linux-VM neu installiert, um sicherzustellen, dass es zu keinen Altlasten im System kommt. Alle Berichte werden mit LaTeX wie folgt erstellt:
+```yml
+      - uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: BERICHT_ORDNER
+          root_file: BERICHT_NAME.tex
+```
 
-
+Hier ist der entsprechende GitHub Workflow: [https://github.com/xu-cheng/latex-action/tree/v3/](https://github.com/xu-cheng/latex-action/tree/v3/)
 
 
 ## Workflows
@@ -108,7 +114,7 @@ Nun beginnt der Upload der Datei in die verschiedenen Ordner der Nextcloud. Die 
 
 Damit die Workflows fehlschlagen wenn der Upload nicht erfolgreich war, wird der ``HTTP_STATUS`` geprüft.
 
-```yml
+```bash
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
