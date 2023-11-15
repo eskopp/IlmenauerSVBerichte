@@ -9,18 +9,19 @@ Sie können jederzeit einen Fehler melden. Unter dem Reiter [Issue](https://gith
 
 
 ## Inhalt
-| Monat   | Event                                  | Link | Status
-|---------|----------------------------------------|------|----------------------------------------|
-| 08.2023 | Familienfest                           |  [Link](2023_08_Familienfest)    | [![2023_08_Familienfest ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml) |
-| 08.2023 | Ilmenauer Schnellschachturnier         |  [Link](2023_08_Ilmenauer_Schnellschachturnier)    | [![2023_08_Ilmenauer_Schnellschachturnier ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml) |
-| 09.2023 | RSR Ausbildung                         |  [Link](2023_09_RSR_Ausbildung)    | [![2023_09_RSR_Ausbildung](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml) |
-| 10.2023 | 28. Magdeburger A-Open 2023            |  [Link](2023_10_Magdeburg_Open_28)    | [![2023_10_Magdeburg_Open_28](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml) |
-| 10.2023 | Mannschaft Schnellschach Königsee 2023 |  [Link](2023_10_Mannschaftsschnellschachpokal-Schach-Königssee)    | 
-| 10.2023 | RSR Ausbildung Prüfungsergebnisse      |  [Link](2023_10_RSR_Ausbildung_Nachtrag)    |
-| 10.2023 | Vereinspräsentation TU Ilmenau WS23/24 |  [Link](2023_10_Vereinspräsentation_TUIlmenau_WS2324)    |
-| 11.2023 | 1. Halloween Blitz 2023                |  [Link](2023_11_Halloween_Blitz)    |
-| 11.2023 | Kreiseinzelmeisterschaft der Jugend U10-U18 2023             |  [Link](2023_11_KJEM_IK)    |
-| 12.2023 | 1. Nikolaus Blitz 2023                 |  [Link](2023_12_Nikolaus_Blitz)    |
+| Monat   | Event                                  | Link                                                  | Status                                                                                                                    |
+|---------|----------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| 08.2023 | Familienfest                           | [Link](2023_08_Familienfest)                         | [![2023_08_Familienfest ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml)             |
+| 08.2023 | Ilmenauer Schnellschachturnier         | [Link](2023_08_Ilmenauer_Schnellschachturnier)      | [![2023_08_Ilmenauer_Schnellschachturnier ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml)   |
+| 09.2023 | RSR Ausbildung                         | [Link](2023_09_RSR_Ausbildung)                      | [![2023_09_RSR_Ausbildung](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml)               |
+| 10.2023 | 28. Magdeburger A-Open 2023            | [Link](2023_10_Magdeburg_Open_28)                  | [![2023_10_Magdeburg_Open_28](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml)     |
+| 10.2023 | Mannschaft Schnellschach Königsee 2023 | [Link](2023_10_Mannschaftsschnellschachpokal-Schach-Königssee) | [![Mannschaft Schnellschach Königsee 2023](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.yml) |
+| 10.2023 | RSR Ausbildung Prüfungsergebnisse      | [Link](2023_10_RSR_Ausbildung_Nachtrag)            | [![RSR Ausbildung Prüfungsergebnisse](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_RSR_Ausbildung_Nachtrag.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_RSR_Ausbildung_Nachtrag.yml) |
+| 10.2023 | Vereinspräsentation TU Ilmenau WS23/24 | [Link](2023_10_Vereinspräsentation_TUIlmenau_WS2324) | [![Vereinspräsentation TU Ilmenau WS23/24](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Vereinspräsentation_TUIlmenau_WS2324.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Vereinspräsentation_TUIlmenau_WS2324.yml) |
+| 11.2023 | 1. Halloween Blitz 2023                | [Link](2023_11_Halloween_Blitz)                   | [![1. Halloween Blitz 2023](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_11_Halloween_Blitz.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_11_Halloween_Blitz.yml) |
+| 11.2023 | Kreiseinzelmeisterschaft der Jugend U10-U18 2023 | [Link](2023_11_KJEM_IK)                   | [![Kreiseinzelmeisterschaft der Jugend U10-U18 2023](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_11_KJEM_IK.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_11_KJEM_IK.yml) |
+| 12.2023 | 1. Nikolaus Blitz 2023                 | [Link](2023_12_Nikolaus_Blitz)                   | [![1. Nikolaus Blitz 2023](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_12_Nikolaus_Blitz.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_12_Nikolaus_Blitz.yml) |
+
 
 
 ## Git 
