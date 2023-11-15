@@ -92,7 +92,7 @@ jobs:
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert. "
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
            exit 1
           fi
