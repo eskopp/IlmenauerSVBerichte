@@ -23,9 +23,7 @@ jobs:
 
       - name: Build PDFs
         run: |
-          cd 2023_11_Halloween_Blitz
-          cp 2023_11_Halloween_Blitz.pdf ../ISV_2023_11_Halloween_Blitz.pdf
-          cd ..
+          cp 2023_11_Halloween_Blitz/2023_11_Halloween_Blitz.pdf ISV_2023_11_Halloween_Blitz.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

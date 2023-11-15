@@ -21,11 +21,9 @@ jobs:
           working_directory: 2023_08_Ilmenauer_Schnellschachturnier
           root_file: 2023_08_Ilmenauer_Schnellschachturnier.tex
 
-      - name: Build PDFs
+      - name: copy FS
         run: |
-          cd 2023_08_Ilmenauer_Schnellschachturnier
-          cp 2023_08_Ilmenauer_Schnellschachturnier.pdf ../ISV_2023_08_Ilmenauer_Schnellschachturnier.pdf
-          cd ..
+          cp 2023_08_Ilmenauer_Schnellschachturnier/2023_08_Ilmenauer_Schnellschachturnier.pdf ISV_2023_08_Ilmenauer_Schnellschachturnier.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

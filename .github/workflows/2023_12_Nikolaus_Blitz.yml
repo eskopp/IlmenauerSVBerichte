@@ -23,9 +23,7 @@ jobs:
 
       - name: Build PDFs
         run: |
-          cd 2023_12_Nikolaus_Blitz
-          cp 2023_12_Nikolaus_Blitz.pdf ../ISV_2023_12_Nikolaus_Blitz.pdf
-          cd ..
+          cp 2023_12_Nikolaus_Blitz/2023_12_Nikolaus_Blitz.pdf ISV_2023_12_Nikolaus_Blitz.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

@@ -21,11 +21,9 @@ jobs:
           working_directory: 2023_09_RSR_Ausbildung
           root_file: 2023_09_RSR_Ausbildung.tex
 
-      - name: Build PDFs
+      - name: copy FS
         run: |
-          cd 2023_09_RSR_Ausbildung
-          cp 2023_09_RSR_Ausbildung.pdf ../ISV_2023_09_RSR_Ausbildung.pdf
-          cd ..
+          cp 2023_09_RSR_Ausbildung/2023_09_RSR_Ausbildung.pdf ISV_2023_09_RSR_Ausbildung.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

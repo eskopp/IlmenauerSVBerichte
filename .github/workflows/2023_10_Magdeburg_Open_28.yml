@@ -21,11 +21,9 @@ jobs:
           working_directory: 2023_10_Magdeburg_Open_28
           root_file: 2023_10_Magdeburg_Open_28.tex
 
-      - name: Build PDFs
+      - name: copy FS
         run: |
-          cd 2023_10_Magdeburg_Open_28
-          cp 2023_10_Magdeburg_Open_28.pdf ../ISV_2023_10_Magdeburg_Open_28.pdf
-          cd ..
+          cp ISV_2023_10_Magdeburg_Open_28/2023_10_Magdeburg_Open_28.pdf ISV_2023_10_Magdeburg_Open_28.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

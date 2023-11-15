@@ -23,9 +23,7 @@ jobs:
 
       - name: Copy FS
         run: |
-          cd 2023_08_Familienfest
-          cp 2023_08_Familienfest.pdf ../ISV_2023_08_Familienfest.pdf
-          cd ..
+          cp  2023_08_Familienfest/2023_08_Familienfest.pdf ISV_2023_08_Familienfest.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

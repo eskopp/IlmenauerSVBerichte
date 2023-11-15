@@ -23,9 +23,7 @@ jobs:
 
       - name: Build PDFs
         run: |
-          cd 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee
-          cp 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.pdf ../ISV_2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.pdf
-          cd ..
+          cp 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee/2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.pdf ISV_2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
@@ -45,7 +43,7 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-   
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
            echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -61,7 +59,7 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-  
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
            echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -109,7 +107,7 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
- 
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
            echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else

@@ -21,11 +21,9 @@ jobs:
           working_directory: 2023_10_Vereinspräsentation_TUIlmenau_WS2324
           root_file: 2023_10_Vereinspräsentation_TUIlmenau_WS2324.tex
 
-      - name: Build PDF
+      - name: copy FS
         run: |
-          cd 2023_10_Vereinspräsentation_TUIlmenau_WS2324
-          cp 2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf ../ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf
-          cd ..
+          cp 2023_10_Vereinspräsentation_TUIlmenau_WS2324/2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf ISV_2023_10_Vereinspräsentation_TUIlmenau_WS2324.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3

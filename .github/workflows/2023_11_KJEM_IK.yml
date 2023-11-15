@@ -23,9 +23,8 @@ jobs:
 
       - name: Build PDFs
         run: |
-          cd 2023_11_KJEM_IK
-          cp 2023_11_KJEM_IK.pdf ../ISV_2023_11_KJEM_IK.pdf
-          cd ..
+          cp 2023_11_KJEM_IK/2023_11_KJEM_IK.pdf ISV_2023_11_KJEM_IK.pdf
+
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
