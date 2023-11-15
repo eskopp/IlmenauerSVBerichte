@@ -130,3 +130,7 @@ Auch wenn es ein Workflow ist, kann man etwas aufräumen.
 ```
 
 Die erstellten Berichte werden anschließend mit dem WebDav-Protokoll verschlüsselt und in die entsprechenden Ordner der Clouds abgelegt, sodass Sie darauf zugreifen können.
+
+
+# Farewell
+Erik @eskopp Skopp
