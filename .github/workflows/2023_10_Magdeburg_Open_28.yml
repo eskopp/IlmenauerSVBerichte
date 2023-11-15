@@ -23,7 +23,7 @@ jobs:
 
       - name: copy FS
         run: |
-          cp ISV_2023_10_Magdeburg_Open_28/2023_10_Magdeburg_Open_28.pdf ISV_2023_10_Magdeburg_Open_28.pdf
+          cp 2023_10_Magdeburg_Open_28/2023_10_Magdeburg_Open_28.pdf ISV_2023_10_Magdeburg_Open_28.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
