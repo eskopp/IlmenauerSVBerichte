@@ -16,26 +16,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up LaTeX
-        run: |
-          sudo apt-get install -y texlive-latex-extra
-          sudo apt-get install -y texlive-fonts-recommended
-          sudo apt-get install -y texlive-publishers
-          sudo apt-get install -y texlive-science
-          sudo apt-get install -y texlive-pstricks
-          sudo apt-get install -y texlive-pictures
-          sudo apt-get install -y texlive-metapost
-          sudo apt-get install -y texlive-music
-          sudo apt-get install -y texlive-xetex
-          sudo apt-get install -y texlive-luatex
-          sudo apt-get install -y texlive-games
-          sudo apt-get install -y tree
+      - uses: xu-cheng/latex-action@v3
+        with:
+          working-directory: 2023_09_RSR_Ausbildung
+          root_file: 2023_09_RSR_Ausbildung.tex
 
       - name: Build PDFs
         run: |
           cd 2023_09_RSR_Ausbildung
-          pdflatex -interaction=nonstopmode -halt-on-error 2023_09_RSR_Ausbildung.tex
-          ls -aril
           cp 2023_09_RSR_Ausbildung.pdf ../ISV_2023_09_RSR_Ausbildung.pdf
           cd ..
 
@@ -48,18 +36,15 @@ jobs:
       - name: Install WebDAV client
         run: sudo apt-get install -y davfs2
 
-      - name: File Tree
-        run: tree
-
       - name: Upload zur ISV Cloud
         run: |
           EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_2023_09_RSR_Ausbildung.pdf"
-          
+
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -82,16 +67,16 @@ jobs:
                 ;;
             esac
           fi
-      
+
       - name: Upload zur ESKOPP Cloud
         run: |
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_2023_09_RSR_Ausbildung.pdf"
-          
+
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -114,16 +99,16 @@ jobs:
                 ;;
             esac
           fi
-      
+
       - name: Upload zur ISV Cloud Event
         run: |
           EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2023_09_RSR_Ausbildung/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_2023_09_RSR_Ausbildung.pdf"
-          
+
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -146,16 +131,16 @@ jobs:
                 ;;
             esac
           fi
-      
+
       - name: Upload zur ESKOPP Cloud Event
         run: |
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2023_09_RSR_Ausbildung/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_2023_09_RSR_Ausbildung.pdf"
-          
+
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -178,16 +163,16 @@ jobs:
                 ;;
             esac
           fi
-      
+
       - name: Upload zur ESKOPP Latex
         run: |
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_2023_09_RSR_Ausbildung.pdf"
-          
+
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
@@ -213,4 +198,4 @@ jobs:
 
       - name: Git Clean
         run: |
-            git clean -fX        
+          git clean -fX
