@@ -46,10 +46,7 @@ Wenn Sie möchten, können Sie eigene Berichte für den Ilmenauer Schachverein e
 ## LaTeX
 LaTeX wird jedes Mal in einer Linux-VM neu installiert, um sicherzustellen, dass es zu keinen Altlasten im System kommt. Alle Berichte werden mit LaTeX wie folgt erstellt:
 
-```bash
- pdflatex -interaction=nonstopmode -halt-on-error *.tex
-```
-Da es sich nicht um eine wissenschaftliche Arbeit handelt und nur um einfache Berichte geht, wird bewusst auf ``biber`` und ähnliche Tools verzichtet.
+
 
 
 ## Workflows
@@ -72,31 +69,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 ```
-Anschließend wird LaTeX installiert.
+Anschließend wird die PDF erstellt.
 
 ```yml
-  - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Set up LaTeX
-        run: |
-          sudo apt-get install -y texlive-latex-extra
-          sudo apt-get install -y texlive-fonts-recommended
-         ...
-```
-
-Theoretisch könnte man das auch über ``xu-cheng/latex-action@v3`` ([LINK](https://github.com/marketplace/actions/github-action-for-latex)) vereinfachen. Da die Templates jedoch fehleranfällig sind, wird dies hier manuell erledigt.
-
-
-Anschließend wird das PDF erstellt
-```yml
-      - name: Build PDFs
-        run: |
-          cd BERICHT_ORDNER
-          pdflatex -interaction=nonstopmode -halt-on-error BERICHT_NAME.tex
-          ls -aril
-          cp BERICHT_NAME.pdf ../ISV_BERICHT_NAME.pdf
-          cd ..
+- uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: BERICHT_ORDNER
+          root_file: BERICHT_NAME.tex
 ```
 
  Und als Artifact zur Verfügung gestellt.
@@ -125,30 +104,23 @@ Nun beginnt der Upload der Datei in die verschiedenen Ordner der Nextcloud. Die 
           PDF_FILE="ISV_BERICHT_NAME.pdf"
           
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-      
+```
+
+Damit die Workflows fehlschlagen wenn der Upload nicht erfolgreich war, wird der ``HTTP_STATUS`` geprüft.
+
+```yml
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
-            case $HTTP_STATUS in
-              400)
-                echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-                ;;
-              401)
-                echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-                ;;
-              403)
-                echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-                ;;
-              404)
-                echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-                ;;
-              *)
-                echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-                exit 1  
-                ;;
-            esac
+           exit 1
           fi
+```
 
+Auch wenn es ein Workflow ist, kann man etwas aufräumen. 
+```yml
+      - name: Git Clean
+        run: |
+          git clean -fX
 ```
 
 Die erstellten Berichte werden anschließend mit dem WebDav-Protokoll verschlüsselt und in die entsprechenden Ordner der Clouds abgelegt, sodass Sie darauf zugreifen können.
