@@ -45,31 +45,11 @@ jobs:
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
-
-
-          case $HTTP_STATUS in
-            201)
-              echo "PDF-Datei wurde erfolgreich hochgeladen."
-              ;;
-            204)
-              echo "PDF-Datei wurde erfolgreich aktualisiert."
-              ;;
-            400)
-              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-              ;;
-            401)
-              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-              ;;
-            403)
-              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-              ;;
-            404)
-              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-              ;;
-            *)
-              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-              ;;
-          esac
+          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
+          else
+           exit 1
+          fi
 
       - name: Upload zur ESKOPP Cloud
         run: |
@@ -81,30 +61,11 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-
-          case $HTTP_STATUS in
-            201)
-              echo "PDF-Datei wurde erfolgreich hochgeladen."
-              ;;
-            204)
-              echo "PDF-Datei wurde erfolgreich aktualisiert. "
-              ;;
-            400)
-              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-              ;;
-            401)
-              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-              ;;
-            403)
-              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-              ;;
-            404)
-              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-              ;;
-            *)
-              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-              ;;
-          esac
+          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
+          else
+           exit 1
+          fi
 
       - name: Upload zur ISV Cloud Event
         run: |
@@ -116,31 +77,11 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-
-          case $HTTP_STATUS in
-            201)
-              echo "PDF-Datei wurde erfolgreich hochgeladen."
-              ;;
-            204)
-              echo "PDF-Datei wurde erfolgreich aktualisiert. "
-              ;;
-            400)
-              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-              ;;
-            401)
-              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-              ;;
-            403)
-              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-              ;;
-            404)
-              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-              ;;
-            *)
-              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-              ;;
-          esac
-
+          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
+          else
+           exit 1
+          fi
       - name: Upload zur ESKOPP Cloud Event
         run: |
           EXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2023_12_Nikolaus_Blitz/"
@@ -151,30 +92,11 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-
-          case $HTTP_STATUS in
-            201)
-              echo "PDF-Datei wurde erfolgreich hochgeladen."
-              ;;
-            204)
-              echo "PDF-Datei wurde erfolgreich aktualisiert. "
-              ;;
-            400)
-              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-              ;;
-            401)
-              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-              ;;
-            403)
-              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-              ;;
-            404)
-              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-              ;;
-            *)
-              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-              ;;
-          esac
+          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
+          else
+           exit 1
+          fi
 
       - name: Upload zur ESKOPP Latex
         run: |
@@ -186,30 +108,11 @@ jobs:
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
 
-
-          case $HTTP_STATUS in
-            201)
-              echo "PDF-Datei wurde erfolgreich hochgeladen."
-              ;;
-            204)
-              echo "PDF-Datei wurde erfolgreich aktualisiert. "
-              ;;
-            400)
-              echo "Fehlerhafter Request. Bitte überprüfen Sie die Anfrageparameter."
-              ;;
-            401)
-              echo "Authentifizierung fehlgeschlagen. Bitte überprüfen Sie die Zugangsdaten."
-              ;;
-            403)
-              echo "Zugriff verweigert. Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben."
-              ;;
-            404)
-              echo "Die Nextcloud-URL oder der angegebene Ordner existiert nicht."
-              ;;
-            *)
-              echo "Fehler beim Hochladen/Aktualisieren der PDF-Datei. Serverantwort-Statuscode: $HTTP_STATUS"
-              ;;
-          esac
+          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
+           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
+          else
+           exit 1
+          fi
 
       - name: Git Clean
         run: |
