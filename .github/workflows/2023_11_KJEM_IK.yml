@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_11_KJEM_IK
+          working_directory: 2023_11_KJEM_IK
           root_file: 2023_11_KJEM_IK.tex
 
       - name: Build PDFs

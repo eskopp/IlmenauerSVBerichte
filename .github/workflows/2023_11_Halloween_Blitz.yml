@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_11_Halloween_Blitz
+          working_directory: 2023_11_Halloween_Blitz
           root_file: 2023_11_Halloween_Blitz.tex
 
       - name: Build PDFs

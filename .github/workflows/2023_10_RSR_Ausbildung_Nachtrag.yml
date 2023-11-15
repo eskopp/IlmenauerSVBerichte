@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_10_RSR_Ausbildung_Nachtrag
+          working_directory: 2023_10_RSR_Ausbildung_Nachtrag
           root_file: 2023_10_RSR_Ausbildung_Nachtrag.tex
 
       - name: Build PDFs

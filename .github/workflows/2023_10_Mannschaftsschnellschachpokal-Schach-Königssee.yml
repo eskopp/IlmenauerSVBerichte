@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee
+          working_directory: 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee
           root_file: 2023_10_Mannschaftsschnellschachpokal-Schach-Königssee.tex
 
       - name: Build PDFs

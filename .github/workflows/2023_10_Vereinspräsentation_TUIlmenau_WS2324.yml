@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_10_Vereinspräsentation_TUIlmenau_WS2324
+          working_directory: 2023_10_Vereinspräsentation_TUIlmenau_WS2324
           root_file: 2023_10_Vereinspräsentation_TUIlmenau_WS2324.tex
 
       - name: Build PDF

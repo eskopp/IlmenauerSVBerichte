@@ -18,7 +18,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working-directory: 2023_10_Magdeburg_Open_28
+          working_directory: 2023_10_Magdeburg_Open_28
           root_file: 2023_10_Magdeburg_Open_28.tex
 
       - name: Build PDFs
