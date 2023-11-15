@@ -133,4 +133,4 @@ Die erstellten Berichte werden anschließend mit dem WebDav-Protokoll verschlüs
 
 
 # Farewell
-Erik @eskopp Skopp
+[Erik Skopp](https://github.com/eskopp)
