@@ -9,13 +9,13 @@ Sie können jederzeit einen Fehler melden. Unter dem Reiter [Issue](https://gith
 
 
 ## Inhalt
-| Monat   | Event                                  | Link |
-|---------|----------------------------------------|------|
-| 08.2023 | Familienfest                           |  [Link](2023_08_Familienfest)    |
-| 08.2023 | Ilmenauer Schnellschachturnier         |  [Link](2023_08_Ilmenauer_Schnellschachturnier)    |
-| 09.2023 | RSR Ausbildung                         |  [Link](2023_09_RSR_Ausbildung)    |
-| 10.2023 | 28. Magdeburger A-Open 2023            |  [Link](2023_10_Magdeburg_Open_28)    |
-| 10.2023 | Mannschaft Schnellschach Königsee 2023 |  [Link](2023_10_Mannschaftsschnellschachpokal-Schach-Königssee)    |
+| Monat   | Event                                  | Link | Status
+|---------|----------------------------------------|------|----------------------------------------|
+| 08.2023 | Familienfest                           |  [Link](2023_08_Familienfest)    | [![2023_08_Familienfest ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Familienfest.yml) |
+| 08.2023 | Ilmenauer Schnellschachturnier         |  [Link](2023_08_Ilmenauer_Schnellschachturnier)    | [![2023_08_Ilmenauer_Schnellschachturnier ](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_08_Ilmenauer_Schnellschachturnier.yml) |
+| 09.2023 | RSR Ausbildung                         |  [Link](2023_09_RSR_Ausbildung)    | [![2023_09_RSR_Ausbildung](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_09_RSR_Ausbildung.yml) |
+| 10.2023 | 28. Magdeburger A-Open 2023            |  [Link](2023_10_Magdeburg_Open_28)    | [![2023_10_Magdeburg_Open_28](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml/badge.svg)](https://github.com/eskopp/IlmenauerSV/actions/workflows/2023_10_Magdeburg_Open_28.yml) |
+| 10.2023 | Mannschaft Schnellschach Königsee 2023 |  [Link](2023_10_Mannschaftsschnellschachpokal-Schach-Königssee)    | 
 | 10.2023 | RSR Ausbildung Prüfungsergebnisse      |  [Link](2023_10_RSR_Ausbildung_Nachtrag)    |
 | 10.2023 | Vereinspräsentation TU Ilmenau WS23/24 |  [Link](2023_10_Vereinspräsentation_TUIlmenau_WS2324)    |
 | 11.2023 | 1. Halloween Blitz 2023                |  [Link](2023_11_Halloween_Blitz)    |
