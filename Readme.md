@@ -44,7 +44,7 @@ sudo pacman -S git
 
 - Windows
 ```powershell
-  Invoke-WebRequest -Uri https://gitforwindows.org/download/win/git-2.33.0.windows.1.exe -OutFile git-install.exe; Start-Process -Wait -FilePath .\git-install.exe; Remove-Item .\git-install.exe
+winget install Git.Git
 ```
 
 ### Git herunterladen
