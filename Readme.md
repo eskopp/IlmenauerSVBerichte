@@ -26,19 +26,41 @@ Sie können jederzeit einen Fehler melden. Unter dem Reiter [Issue](https://gith
 
 
 ## Git 
+### Installieren von Git
+- Auf MacOS
+```bash
+brew install git
+```
+
+- Ubuntu
+```bash
+sudo apt install git
+```
+
+- Arch
+```bash
+sudo pacman -S git
+```
+
+- Windows
+```powershell
+  Invoke-WebRequest -Uri https://gitforwindows.org/download/win/git-2.33.0.windows.1.exe -OutFile git-install.exe; Start-Process -Wait -FilePath .\git-install.exe; Remove-Item .\git-install.exe
+```
+
+### Git herunterladen
 Sie können sich das Git hier herunterladen: [https://github.com/eskopp/IlmenauerSV/archive/refs/heads/main.zip](https://github.com/eskopp/IlmenauerSV/archive/refs/heads/main.zip)
 
-Alternativ können Sie das Git-Repository clonen:
+Alternativ können Sie das aktuelle Git-Repository clonen:
 
 - mit HTTPS: 
 ```bash
-https://github.com/eskopp/IlmenauerSV.git
+git clone https://github.com/eskopp/IlmenauerSV.git
 ```
 
 - mit SSH:
 
 ```bash
-git@github.com:eskopp/IlmenauerSV.git
+git clone git@github.com:eskopp/IlmenauerSV.git
 ```
 
 
