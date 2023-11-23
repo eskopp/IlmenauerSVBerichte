@@ -127,12 +127,12 @@ Nun beginnt der Upload der Datei in die verschiedenen Ordner der Nextcloud. Die 
 ```yml
  - name: Upload zur xxx Cloud
         run: |
-          EXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
+          NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
           PDF_FILE="ISV_BERICHT_NAME.pdf"
           
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$EXTCLOUD_URL")
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
 ```
 
 Damit die Workflows fehlschlagen wenn der Upload nicht erfolgreich war, wird der ``HTTP_STATUS`` geprüft.
