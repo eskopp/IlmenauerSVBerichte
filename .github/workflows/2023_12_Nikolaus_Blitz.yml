@@ -26,7 +26,7 @@ jobs:
           cp 2023_12_Nikolaus_Blitz/2023_12_Nikolaus_Blitz.pdf ISV_2023_12_Nikolaus_Blitz.pdf
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 2023_12_Nikolaus_Blitz
           path: ISV_2023_12_Nikolaus_Blitz.pdf

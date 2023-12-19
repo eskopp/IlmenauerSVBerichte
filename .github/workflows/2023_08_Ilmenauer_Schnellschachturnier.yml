@@ -26,7 +26,7 @@ jobs:
           cp 2023_08_Ilmenauer_Schnellschachturnier/2023_08_Ilmenauer_Schnellschachturnier.pdf ISV_2023_08_Ilmenauer_Schnellschachturnier.pdf
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 2023_08_Ilmenauer_Schnellschachturnier
           path: ISV_2023_08_Ilmenauer_Schnellschachturnier.pdf

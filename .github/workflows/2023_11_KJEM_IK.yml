@@ -27,7 +27,7 @@ jobs:
 
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 2023_11_KJEM_IK
           path: ISV_2023_11_KJEM_IK.pdf
