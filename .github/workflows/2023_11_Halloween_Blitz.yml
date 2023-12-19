@@ -26,7 +26,7 @@ jobs:
           cp 2023_11_Halloween_Blitz/2023_11_Halloween_Blitz.pdf ISV_2023_11_Halloween_Blitz.pdf
 
       - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 2023_11_Halloween_Blitz
           path: ISV_2023_11_Halloween_Blitz.pdf
