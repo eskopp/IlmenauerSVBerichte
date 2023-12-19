@@ -6,11 +6,11 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{listings}
-\usepackage{totpages}  % Paket für die Gesamtseitenzahl
-\setlength{\footskip}{13.0pt} % keine Ahnung ^^
+\usepackage{totpages}
+\setlength{\footskip}{13.0pt}
 \usepackage{thm-restate}
 
-\usepackage[utf8]{inputenc} % Verwenden Sie utf8 für UTF-8 Zeichencodierung
+\usepackage[utf8]{inputenc}
 
 \newcommand{\inhalt}{1. Ilmenauer Nikolaus Blitz 2023}
 \seminar{\inhalt}
@@ -18,45 +18,67 @@
 \title{\inhalt}
 \author{Erik Skopp}
 
-\usepackage{fancyhdr}  % Für individuelle Kopf- und Fußzeilen
-
-% Definieren des Seitenstils
+\usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}  % Vorherige Kopf- und Fußzeilen-Einstellungen löschen
-\fancyfoot[Rf]{\thepage ~von \zpageref{LastPage}}  % Gesamtseitenzahl
+\fancyhf{}
 \nolinenumbers
 
 \begin{document}
-	
-	\maketitle
-	\thispagestyle{plain} % Seitenzahl auf Seite 1 anzeigen
-	\begin{abstract}
-		Bericht: \inhalt.\\
-		Das erste Nikolaus Blitzturnier des Ilmenauer Schachverein fand am 08.12.2023 
-	\end{abstract}
-	
-	\section{Bericht}
-	Am 05.11.2023 \\
-	
-	
-	Erik Skopp
-	
-	
-	\section{Bilder und Tabellen}
-	Alle Bilder und Tabellen können im PDF Format heruntergeladen werden. Alle wichtige Tabellen können im HTML Format heruntergeladen werden: \\
-	\begin{itemize}
-		\item[-] \url{https://cloud.ilmenauer-schachverein.de/s/P37eFtqrMe2ea7m}
-	\end{itemize}
-	
-	\section{Ergebnisdienst}
-	Alle Paarungen, Ergebnisse und Statistiken können hier eingesehen werden: 
-	\begin{itemize}
-		\item[-]
-		\url{https://chess-results.com/tnr843741.aspx?lan=0}
-	\end{itemize}
-	
+
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+    Bericht: \inhalt.\\
+    Das erste Nikolaus Blitzturnier des Ilmenauer Schachvereins fand am 08.12.2023 statt. Es wurden 13 Runden mit einer Bedenkzeit von 5 Minuten gespielt. Platz 1 erreichte Andreas Neubauer von BW Stadtilm. Platz 2 ging an Pascal Eichenauer. Platz 3 ging an Ainur Ziganshin.
+\end{abstract}
+
+\section{Bericht}
+Am 08.12.2023 fand in Ilmenau das erste Ilmenauer Nikolaus Blitz statt. Es wurden 13 Runden in weihnachtlicher Atmosphäre gespielt. Jeder Spieler hatte pro Runde 5 Minuten.
+
+Erik Skopp
+
+\section{Bilder und Tabellen}
+Alle Bilder und Tabellen können im PDF Format heruntergeladen werden. Alle wichtigen Tabellen können im HTML Format heruntergeladen werden: \\
+\begin{itemize}
+    \item[-] \url{https://cloud.ilmenauer-schachverein.de/s/P37eFtqrMe2ea7m}
+\end{itemize}
+
+\section{Ergebnisdienst}
+Alle Paarungen, Ergebnisse und Statistiken können hier eingesehen werden: 
+\begin{itemize}
+    \item[-] \url{https://chess-results.com/tnr843741.aspx?lan=0}
+\end{itemize}
+
+\clearpage
 \section{Abschlusstabelle (nach Runde 13)}
-ki
-	
-	
+\begin{table}[h]
+    \centering
+    \caption{Nikolaus Blitz 2023 - Rangliste: Stand nach der 13. Runde}
+    \begin{tabular}{|c|l|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{10}{|c|}{Rangliste: Stand nach der 13. Runde} \\
+        \hline
+        Rang & Teilnehmer & TWZ & Verein/Ort & S & R & V & Punkte & Buchh & SoBerg \\
+        \hline
+        1 & Neubauer, Andreas & 2104 & SG Blau-Weiß St & 12 & 0 & 1 & 12.0 & 91.0 & 83.00 \\
+        2 & Eichenauer, Pascal & 1956 & SV Würzburg von & 12 & 0 & 1 & 12.0 & 91.0 & 79.00 \\
+        3 & Ziganshin, Ainur & 1802 & Ilmenauer SV & 11 & 0 & 2 & 11.0 & 92.0 & 68.00 \\
+        4 & Hartung, Markus & 1584 & Ilmenauer SV & 7 & 3 & 3 & 8.5 & 95.0 & 55.00 \\
+        5 & Skopp, Erik & 1505 & Ilmenauer SV & 8 & 1 & 4 & 8.5 & 89.5 & 43.00 \\
+        6 & Liedmann, Matthias & 2069 & Ilmenauer SV & 7 & 2 & 4 & 8.0 & 88.0 & 38.25 \\
+        7 & Geißhirt, Marco & 1941 & SG Barchfeld/Br & 7 & 2 & 4 & 8.0 & 86.5 & 35.25 \\
+        8 & Lehmann, Georg & 1657 & ESV Lok Meining & 7 & 0 & 6 & 7.0 & 83.0 & 27.00 \\
+        9 & Jung, Timo & & Ilmenauer SV & 6 & 1 & 6 & 6.5 & 90.0 & 30.75 \\
+        10 & Schenk, Stefan & 1989 & Ilmenauer SV & 6 & 1 & 6 & 6.5 & 89.5 & 28.50 \\
+        11 & Dudeja, Iresh & 1587 & Ilmenauer SV & 6 & 0 & 7 & 6.0 & 86.0 & 23.50 \\
+        12 & Eisenbach, Markus & 1404 & Ilmenauer SV & 6 & 0 & 7 & 6.0 & 80.0 & 21.50 \\
+        13 & Lehmann, Norik & 886 & Ilmenauer SV & 5 & 0 & 8 & 5.0 & 83.5 & 19.50 \\
+        14 & Görlach, Hanna & & Ilmenauer SV & 4 & 0 & 9 & 4.0 & 69.5 & 15.50 \\
+        15 & Stieler, Karl & & GER & 3 & 0 & 10 & 3.0 & 81.5 & 10.00 \\
+        16 & Abuawad, Fares & & Ilmenauer SV & 3 & 0 & 10 & 3.0 & 76.5 & 11.00 \\
+        17 & Winger, Frank & 838 & Ilmenauer SV & 2 & 0 & 11 & 2.0 & 70.5 & 8.00 \\
+        \hline
+    \end{tabular}
+\end{table}
+
 \end{document}
