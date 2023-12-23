@@ -73,7 +73,7 @@ Wenn Sie möchten, können Sie eigene Berichte für den Ilmenauer Schachverein e
 ## LaTeX
 LaTeX wird jedes Mal in einer Linux-VM neu installiert, um sicherzustellen, dass es zu keinen Altlasten im System kommt. Alle Berichte werden mit LaTeX wie folgt erstellt:
 ```yml
-      - uses: xu-cheng/latex-action@v3
+      - uses: xu-cheng/latex-action@v4
         with:
           working_directory: BERICHT_ORDNER
           root_file: BERICHT_NAME.tex
