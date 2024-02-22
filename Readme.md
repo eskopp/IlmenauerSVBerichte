@@ -1,3 +1,7 @@
+> [!CAUTION]
+> Aufgrund der aktuellen Entscheidung des Ilmenauer Schachvereins, keine Texte mehr zu veröffentlichen, verzichte ich darauf, weitere Beiträge zu verfassen. ~ [@eskopp](https://github.com/eskopp) am 22.02.2024
+
+
 # Ilmenauer SV
 Verschiedene Berichte von Turnieren und anderen Veranstaltungen. Alle Berichte sind in der [Ilmenauer Schachverein Cloud](https://cloud.ilmenauer-schachverein.de) verfügbar.  
 
