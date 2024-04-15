@@ -4,7 +4,9 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{caption}
 \usepackage{float}
+\usepackage{adjustbox}
 \usepackage{listings}
 \usepackage{totpages}  % Paket für die Gesamtseitenzahl
 \setlength{\footskip}{13.0pt} % keine Ahnung ^^
@@ -344,35 +346,39 @@ Alle Tabellen stehen in der Cloud unter \url{https://cloud.ilmenauer-schachverei
 \end{center}
 \clearpage
 
-
-
 \section{Bilder}
 Alle Bilder stehen in der Cloud unter \url{https://cloud.ilmenauer-schachverein.de/apps/files/files/89310?dir=/Events/2024_04_Gerd_Fornahl_Gedenkturnier_8/Bilder} zur Verfügung. Bitte nutzen Sie diese für die weitere Berichterstattung.
 
 \subsection{Siegerehrung Bild 1}
 \begin{center}
-    \includegraphics[width=\linewidth]{2024_04_Gerd_Fornahl_Gedenkturnier_8_01}
+    \adjustbox{width=\linewidth,height=0.5625\linewidth,keepaspectratio}{\includegraphics{2024_04_Gerd_Fornahl_Gedenkturnier_8_01}}
     \captionof{figure}{Siegerehrung Bild 1}
     \label{fig:gerd_fornahl_1}
 \end{center}
 
+\clearpage
+
 \subsection{Siegerehrung Bild 2}
 \begin{center}
-    \includegraphics[width=\linewidth]{2024_04_Gerd_Fornahl_Gedenkturnier_8_02}
+    \adjustbox{width=\linewidth,height=0.5625\linewidth,keepaspectratio}{\includegraphics{2024_04_Gerd_Fornahl_Gedenkturnier_8_02}}
     \captionof{figure}{Siegerehrung Bild 2}
     \label{fig:gerd_fornahl_2}
 \end{center}
 
+\clearpage
+
 \subsection{Siegerehrung Bild 3}
 \begin{center}
-    \includegraphics[width=\linewidth]{2024_04_Gerd_Fornahl_Gedenkturnier_8_03}
+    \adjustbox{angle=270,keepaspectratio}{\includegraphics{2024_04_Gerd_Fornahl_Gedenkturnier_8_03}}
     \captionof{figure}{Siegerehrung Bild 3}
     \label{fig:gerd_fornahl_3}
 \end{center}
 
+\clearpage
+
 \subsection{Siegerehrung Bild 4}
 \begin{center}
-    \includegraphics[width=\linewidth]{2024_04_Gerd_Fornahl_Gedenkturnier_8_04}
+    \adjustbox{width=\linewidth,height=0.5625\linewidth,keepaspectratio}{\includegraphics{2024_04_Gerd_Fornahl_Gedenkturnier_8_04}}
     \captionof{figure}{Siegerehrung Bild 4}
     \label{fig:gerd_fornahl_4}
 \end{center}
@@ -380,5 +386,7 @@ Alle Bilder stehen in der Cloud unter \url{https://cloud.ilmenauer-schachverein.
 \clearpage
 \section{Anhang}
 \bibliography{2024_04_Gerd_Fornahl_Gedenkturnier_8/literatur}
+%\listoffigures
+%\listoftables
 
 \end{document}
