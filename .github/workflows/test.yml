@@ -24,10 +24,10 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
+          working_directory: test
           root_file: test.tex  # Der Pfad relativ zum working-directory
           compiler: pdflatex
           args: "--synctex=1 --shell-escape --interaction=nonstopmode"
-          extra_packages: bibtex
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v3
