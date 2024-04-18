@@ -33,5 +33,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: compiled-pdf
-          path: ./test/*.pdf  # Pfad relativ zum working-directory
+          path: ./test/*  # Pfad relativ zum working-directory
 
