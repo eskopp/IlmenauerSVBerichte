@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "2024_04_THJEM/**"
+      - "2024_03_Grenke_Open/**"
       - ".github/workflows/**"
 
 jobs:
@@ -18,18 +18,18 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working_directory: 2024_04_THJEM
-          root_file: 2024_04_THJEM.tex
+          working_directory: 2024_03_Grenke_Open
+          root_file: 2024_03_Grenke_Open.tex
 
       - name: Build PDFs
         run: |
-          cp 2024_04_THJEM/2024_04_THJEM.pdf ISV_2024_04_THJEM.pdf
+          cp 2024_03_Grenke_Open/2024_03_Grenke_Open.pdf ISV_2024_03_Grenke_Open.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 2024_04_THJEM
-          path: ISV_2024_04_THJEM.pdf
+          name: 2024_03_Grenke_Open
+          path: ISV_2024_03_Grenke_Open.pdf
 
       - name: Install WebDAV client
         run: sudo apt-get install -y davfs2
@@ -39,7 +39,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
+          PDF_FILE="ISV_2024_03_Grenke_Open.pdf"
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
@@ -54,7 +54,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
+          PDF_FILE="ISV_2024_03_Grenke_Open.pdf"
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
@@ -67,10 +67,10 @@ jobs:
 
       - name: Upload zur ISV Cloud Event
         run: |
-          NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2024_04_THJEM/"
+          NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2024_03_Grenke_Open/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
+          PDF_FILE="ISV_2024_03_Grenke_Open.pdf"
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
@@ -82,10 +82,10 @@ jobs:
           fi
       - name: Upload zur ESKOPP Cloud Event
         run: |
-          NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2024_04_THJEM/"
+          NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2024_03_Grenke_Open/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
+          PDF_FILE="ISV_2024_03_Grenke_Open.pdf"
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
@@ -101,7 +101,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
+          PDF_FILE="ISV_2024_03_Grenke_Open.pdf"
 
 
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
