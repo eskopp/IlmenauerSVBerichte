@@ -1,11 +1,10 @@
-name: 2024_04_THJEM
+name: Test Workflow
 
 on:
   push:
     branches:
       - main
     paths:
-      - "2024_04_THJEM/**"
       - ".github/workflows/**"
 
 jobs:
@@ -18,99 +17,22 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          working_directory: 2024_04_THJEM
-          root_file: 2024_04_THJEM.tex
+          working_directory: 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          root_file: 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
 
       - name: Build PDFs
         run: |
-          cp 2024_04_THJEM/2024_04_THJEM.pdf ISV_2024_04_THJEM.pdf
+          cp 2024_04_Gerd_Fornahl_Gedenkturnier_8/2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 2024_04_THJEM
-          path: ISV_2024_04_THJEM.pdf
-
-      - name: Install WebDAV client
-        run: sudo apt-get install -y davfs2
-
-      - name: Upload zur ISV Cloud
-        run: |
-          NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
-          USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
-          PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
-
-
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
-          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
-          else
-           exit 1
-          fi
-
-      - name: Upload zur ESKOPP Cloud
-        run: |
-          NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
-          USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
-          PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
-
-
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
-
-          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
-          else
-           exit 1
-          fi
-
-      - name: Upload zur ISV Cloud Event
-        run: |
-          NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2024_04_THJEM/"
-          USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
-          PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
-
-
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
-
-          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
-          else
-           exit 1
-          fi
-      - name: Upload zur ESKOPP Cloud Event
-        run: |
-          NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2024_04_THJEM/"
-          USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
-          PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
-
-
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
-
-          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
-          else
-           exit 1
-          fi
-
-      - name: Upload zur ESKOPP Latex
-        run: |
-          NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
-          USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
-          PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="ISV_2024_04_THJEM.pdf"
-
-
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
-
-          if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
-           echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
-          else
-           exit 1
-          fi
+          name: 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          path: ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
+          compiler: pdflatex
+          args: "--synctex=1 --shell-escape --interaction=nonstopmode"
+          extra_packages: bibtex
+ 
 
       - name: Git Clean
         run: |
