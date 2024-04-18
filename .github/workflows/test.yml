@@ -20,12 +20,12 @@ jobs:
       - name: Set up TeX Live
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex  # Der Pfad relativ zum working-directory
+          root_file: 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex  # Der Pfad relativ zum working-directory
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex  # Der Pfad relativ zum working-directory
+          root_file: 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex  # Der Pfad relativ zum working-directory
           compiler: pdflatex
           args: "--synctex=1 --shell-escape --interaction=nonstopmode"
           extra_packages: bibtex
