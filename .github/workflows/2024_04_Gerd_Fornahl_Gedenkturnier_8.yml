@@ -48,6 +48,7 @@ jobs:
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
             exit 1
+          fi
 
       - name: Upload zur ESKOPP Cloud
         run: |
@@ -60,6 +61,7 @@ jobs:
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
             exit 1
+          fi
 
       - name: Upload zur ISV Cloud Event
         run: |
@@ -84,6 +86,7 @@ jobs:
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
             exit 1
+          fi
 
       - name: Upload zur ESKOPP Latex
         run: |
@@ -96,6 +99,7 @@ jobs:
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
           else
             exit 1
+          fi
 
       - name: Git Clean
         run: |
