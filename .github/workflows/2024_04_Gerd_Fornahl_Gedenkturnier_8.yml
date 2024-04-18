@@ -16,14 +16,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - uses: xu-cheng/latex-action@v3
-        with:
-          working_directory: 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          root_file: 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
-
       - name: Build PDFs
         run: |
-          cp 2024_04_Gerd_Fornahl_Gedenkturnier_8/2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
+          cd 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          sudo apt install 
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          biber 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          cp ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf .. 
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
