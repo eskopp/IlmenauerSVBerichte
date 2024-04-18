@@ -24,10 +24,10 @@ jobs:
       - name: Build PDFs
         run: |
           cd 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          biber 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
+          bibtex 2024_04_Gerd_Fornahl_Gedenkturnier_8.aux
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
+          pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
           mv 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf ..
 
       - name: Upload PDF Artifact
