@@ -29,7 +29,7 @@ jobs:
           pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
           pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
           cd ..
-          cp 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf/2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
+          cp 2024_04_Gerd_Fornahl_Gedenkturnier_8/2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
