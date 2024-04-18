@@ -19,7 +19,8 @@ jobs:
       - name: Build PDFs
         run: |
           cd 2024_04_Gerd_Fornahl_Gedenkturnier_8
-          sudo apt install 
+          sudo apt install texlive -y
+          sudo apt install biber -y
           pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
           biber 2024_04_Gerd_Fornahl_Gedenkturnier_8
           pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8
