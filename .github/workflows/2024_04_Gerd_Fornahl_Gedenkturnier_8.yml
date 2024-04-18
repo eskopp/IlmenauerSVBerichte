@@ -30,6 +30,7 @@ jobs:
           pdflatex 2024_04_Gerd_Fornahl_Gedenkturnier_8.tex
           cd ..
           cp 2024_04_Gerd_Fornahl_Gedenkturnier_8/2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
+          cp 2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
@@ -42,7 +43,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
+          PDF_FILE="ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
@@ -55,7 +56,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
+          PDF_FILE="ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
@@ -68,7 +69,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ISV_WEBDAV_BASE }}/${{ secrets.ISV_WEBDAV_PATH_EVENT }}/2024_04_Gerd_Fornahl_Gedenkturnier_8/"
           USERNAME="${{ secrets.ISV_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ISV_WEBDAV_PASSWORD }}"
-          PDF_FILE="2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
+          PDF_FILE="ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
@@ -81,7 +82,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_EVENT }}/2024_04_Gerd_Fornahl_Gedenkturnier_8/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
+          PDF_FILE="ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
@@ -94,7 +95,7 @@ jobs:
           NEXTCLOUD_URL="${{ secrets.ESKOPP_WEBDAV_BASE }}/${{ secrets.ESKOPP_WEBDAV_PATH_PUB }}/"
           USERNAME="${{ secrets.ESKOPP_WEBDAV_USER }}"
           PASSWORD="${{ secrets.ESKOPP_WEBDAV_PASSWORD }}"
-          PDF_FILE="2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
+          PDF_FILE="ISV_2024_04_Gerd_Fornahl_Gedenkturnier_8.pdf"
           HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" -u "$USERNAME:$PASSWORD" -T "$PDF_FILE" "$NEXTCLOUD_URL")
           if [ $HTTP_STATUS -eq 201 ] || [ $HTTP_STATUS -eq 204 ]; then
             echo "PDF-Datei wurde erfolgreich hochgeladen oder aktualisiert."
