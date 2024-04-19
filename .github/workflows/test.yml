@@ -30,7 +30,7 @@ jobs:
           args: "--synctex=1 --shell-escape --interaction=nonstopmode"
 
       - name: Upload PDF as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
           path: ./test/*  # Pfad relativ zum working-directory
