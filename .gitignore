@@ -305,3 +305,8 @@ TSWLatexianTemp*
 *.pdf
 */*.pdf
 pdf
+
+
+# Chessbase
+*.pgi
+*.ini
