@@ -10,7 +10,11 @@
 %%\usepackage[margin=1in]{geometry}
 \setlength{\footskip}{13.0pt}
 \usepackage{thm-restate}
-
+\lstset{
+  basicstyle=\ttfamily,
+  columns=flexible,
+  breaklines=true 
+}
 \usepackage[utf8]{inputenc}
 
 \newcommand{\inhalt}{Thüringer Jugend Einzelmeisterschaft 2024}
@@ -109,8 +113,11 @@ Ich habe ein Teil der Partien digitalisiert. Leider lassen sich viele Partien au
 
 
 \subsection{Partie ohne Anmerkungen}
+\lstinputlisting{unkommentiert.pgn}
+
 Partie ohne Anmerkungen
 \subsection{Partie mit Anmerkungen}
+\lstinputlisting{unkommentiert.pgn}
 
-Partie mit Anmerkungen
+
 \end{document}
