@@ -1,20 +1,17 @@
 [Event "THJEM 2024 - U12w"]
 [Site "Naumburg"]
 [Date "2024.04.05"]
-[Round "3"]
+[Round "3.7"]
 [White "Nasiri, Ronika"]
 [Black "Kuehrt, Daria"]
 [Result "1-0"]
-[WhiteElo "0"]
-[WhiteTeam "Ilmenauer SV"]
-[BlackElo "0"]
-[BlackTeam "SV Empor Erfurt"]
-[Board "7"]
-[Annotator "Skopp, Erik"]
-[Variant "Standard"]
 [ECO "C50"]
-[Opening "Italian Game: Giuoco Piano"]
+[Annotator "Skopp, Erik"]
+[PlyCount "43"]
+[EventDate "2024.??.??"]
+[SourceTitle "Skopp, Erik"]
+[WhiteTeam "Ilmenauer SV"]
+[BlackTeam "SV Empor Erfurt"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O f6 5. a3 g5 6. Nc3 h5 7. d3 h4 8. Be3 Bxe3 9. fxe3 g4 10. Nd2 g3 11. Nd5 gxh2+ 12. Kxh2 d6 13. Rf3 Bg4 14. Qf1 Bxf3 15. Qxf3 Rh6 16. Qg4 Qc8 17. Qxg8+ Kd7 18. Qf7+ Kd8 19. d4 exd4 20. Bb5 dxe3 21. Bxc6 Rh7 22. Qe8# 1-0
-
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O {Beide Kinder entwickeln ihre Figuren. Ronika sichert mit der Rochade ihren König ab.} f6 {f6 ist hier ein grober Patzer. Denn er schwächt die Königsstellung extrem. Ihr hat Ronika bereits Punkte die sie angreifen kann.} 5. a3 {a3 überdeckt das Feld b4. Damit weder der Springer noch der Läufer dieses Feld betreten kann. Leider ist dies aktuell komplett falsch. Besser wäre c3, um den Druck und den Angriff auf das Feld d4 zu lenken.} g5 {Ein fataler Fehler. Dadurch ist die Königssicherheit von Schwarz nicht mehr vorhanden. Ein zielgerichteter Angriff führt hier direkt zum Sieg. Mit Sxg5! wäre die Partie schon zu Ende, da schwarz den Angriff nicht abwehren kann.} 6. Nc3 {Der Zug schließt die Eröffnung ab. Wir befinden uns hier in einer Stellung des Giuoco Pianissimo bzw der Ungarischen Eröffnung.} (6. Nxg5 fxg5 7. Qh5+ Ke7 8. Qf7+ Kd6) 6... h5 {Weiß steht deutlich besser. Schwarz versucht seinen Angriff gut weiter auszubauen.} 7. d3 {d3 ist kein schlechter Zug. Es erlaubt dem schwarzfeldrigem Läufer, sich zu entwickeln. Leider wäre ein aggressiveres Vorgehen hier zielführender.} h4 {Schwarz legt sich fest und gibt damit Weiß alle weißen Felder am Königsflügel.} 8. Be3 Bxe3 9. fxe3 g4 10. Nd2 g3 11. Nd5 gxh2+ 12. Kxh2 d6 13. Rf3 Bg4 14. Qf1 Bxf3 15. Qxf3 Rh6 16. Qg4 Qc8 17. Qxg8+ Kd7 18. Qf7+ Kd8 19. d4 exd4 20. Bb5 dxe3 21. Bxc6 Rh7 22. Qe8# 1-0
 
