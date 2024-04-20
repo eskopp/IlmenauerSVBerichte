@@ -122,18 +122,6 @@ Die PGN kann aus dem GitHub Repository heruntergeladen werden: \url{https://gith
 Die PGN kann aus dem GitHub Repository heruntergeladen werden: \url{https://github.com/eskopp/IlmenauerSVBerichte/blob/main/2024_04_THJEM/kommentiert.pgn}
 \lstinputlisting{unkommentiert.pgn}
 
-\xskaknewgame % startet ein neues Schachspiel
-\xskakset{moveid=1w} % setzt den Zugidentifikator auf den ersten weißen Zug
-
-% Hier fügst du die Züge der Partie ein
-\xskakparse{pgn={
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7 11. c4 c6 12. cxb5 axb5 13. Nc3 Bb7 14. Bg5 h6 15. Bh4 Re8 16. Rc1 Qa5 17. a3 exd4 18. Nxd4 g6 19. Ba2 Qb6 20. Nf3 Bf8 21. Qd2 c5 22. Nd5 Bxd5 23. exd5 Rxe1+ 24. Rxe1 Re8
-}}
-
-% Anzeigen des Bretts nach dem 24. Zug von Schwarz
-\xskakset{moveid=24b}
-\chessboard[setfen=\xskakget{nextfen}]
-
 
 \subsection{Schlussstellung}
 \newchessgame
