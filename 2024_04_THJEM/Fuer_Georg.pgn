@@ -1,0 +1,36 @@
+[Event "THJEM 2024 - U12w"]
+[Site "Naumburg"]
+[Date "2024.04.05"]
+[Round "3.7"]
+[White "Nasiri, Ronika"]
+[Black "Kuehrt, Daria"]
+[Result "1-0"]
+[ECO "C50"]
+[Annotator "Skopp, Erik"]
+[PlyCount "43"]
+[EventDate "2024.??.??"]
+[SourceTitle "Skopp, Erik"]
+[WhiteTeam "Ilmenauer SV"]
+[BlackTeam "SV Empor Erfurt"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O {Beide Kinder entwickeln ihre Figuren. Ronika sichert mit der Rochade ihren Koenig ab.} f6 {f6 ist hier ein grober Patzer. Denn er schwaecht die Koenigsstellung extrem. Ihr hat Ronika bereits Punkte die sie angreifen kann.} 5. a3 {a3 ueberdeckt das Feld b4. Damit weder der Springer noch der Laeufer dieses Feld betreten kann. Leider ist dies aktuell komplett falsch. Besser waere c3, um den Druck und den Angriff auf das Feld d4 zu lenken.} g5 {Ein fataler Fehler. Dadurch ist die Koenigssicherheit von Schwarz nicht mehr vorhanden. Ein zielgerichteter Angriff fuehrt hier direkt zum Sieg. Mit Sxg5! waere die Partie schon zu Ende, da schwarz den Angriff nicht abwehren kann.} 6. Nc3 {Der Zug schliesst die Eroeffnung ab. Wir befinden uns hier in einer Stellung des Giuoco Pianissimo bzw der Ungarischen Eroeffnung.} (6. Nxg5 fxg5 7. Qh5+ Ke7 8. Qf7+ Kd6) 6... h5 {Weiss steht deutlich besser. Schwarz versucht seinen Angriff gut weiter auszubauen.} 7. d3 {d3 ist kein schlechter Zug. Es erlaubt dem schwarzfeldrigem Laeufer, sich zu entwickeln. Leider waere ein aggressiveres Vorgehen hier zielfuehrender.} h4 {Schwarz legt sich fest und gibt damit Weiss alle weissen Felder am Koenigsfluegel.} 8. Be3 Bxe3 9. fxe3 {Nun ist oeffnung der f-Linie nimmt auch der Tum am Angriff auf dem Koenig teil.} g4 {Schwarz versucht verzeifelt anzugreifen was ihm nicht gelingt.} 10. Nd2 {Weiss traut sich immer noch nicht anzugreifen.} g3 {Schwarz zerstoert seine Stellung weiter. Keine der schwarzen Figuren uebernimmt eine Aufgabe.} 11. Nd5 gxh2+ 12. Kxh2 {Solche Bauern schlaegt man nicht, da sie einen guten Schild vor dem Koenig bilden. Besser waere Kh1} d6 13. Rf3 Bg4 {Wenn zwei Figuren in einer Diagonale stehen ist das in seltenen Faellen gut.} 14. Qf1 {Hofft auf Lxf6} Bxf3 15. Qxf3 {Die Stellung ist ausgeglichen auch wenn weiss ein kleines bisschen aktiver steht.} Rh6 {Ein Zug ohne Sinn. Weiss steht nun auf Gewinn.} 16. Qg4 {Dg4 ist ein guter Zug. Er entwickelt die Dame zentral in den Angriff.} Qc8 17. Qxg8+ Kd7 18. Qf7+ Kd8 {Weiss hat einen starken Angriff und hofft, dass er weiter geht} 19. d4 {Der Zug weicht deutlich von dem Angriff ab. Besser waere Dg8+ mit Turm Gewinn} (19. Qg8+ Kd7 20. Qg7+ Kd8 21. Qxh6) 19... exd4 20. Bb5 dxe3 21. Bxc6 {Jetzt spielt jede Figur im Angriff mit. Schwarz kann den Angriff nicht mehr abwehren.} Rh7 {Schwarz sieht keinen Sinn mehr in der Partie und beendet die Partie selbst.} 22. Qe8# {Weiss hat eine gute Partie gespielt. Ronika haette mehr angreifen sollen um die Partie schneller zu beenden.} 1-0
+
+[Event "THJEM 2024 - U12w"]
+[Site "Naumburg"]
+[Date "2024.04.04"]
+[Round "1.7"]
+[White "Goerlach, Hanna"]
+[Black "Grube, Anna"]
+[Result "1-0"]
+[ECO "B06"]
+[WhiteElo "1122"]
+[BlackElo "841"]
+[Annotator "Skopp, Erik"]
+[PlyCount "41"]
+[EventDate "2024.??.??"]
+[SourceTitle "Skopp, Erik"]
+[WhiteTeam "Ilmenauer SV"]
+[BlackTeam "ESV Lok Meiningen"]
+
+1. d4 g6 2. e4 {Weiß dominiert das Zentrum.} Bg7 3. Nc3 e6 4. Nf3 d6 {Weiß steht solide und bereit gegen Schwarz zu gewinnen.} 5. Be2 {Der Läufer gehört auf d3 um gegen das Fiancetto zu spielen. Mit der Idee h4 h5} Bd7 6. O-O {Weiß hat die Eröffnung klar gewonnen. Der König ist in Sicherheit und fast alle Figuren stehen in Ordnung.} c5 {Moderne Verteidigung. c5 ist ein schwerer Fehler. Nach dxc5 dxc5 hat schwarz keine Sicherheit am König mehr.} 7. Be3 {Der Zug deckt den Bauern. Leider vergibt weiß die Möglichkeit den eigenen Vorteil weiter auszubauen und die schwarzen Felder zu dominieren.} (7. dxc5 dxc5 8. Be3 Qc7 {[%csl Rc7,Rd6][%cal Rb5c7,Rb5d6,Rc3b5] Weiß dominiert die schwarzen Felder.}) 7... Qb6 {Schwarz gibt weiß noch einmal die Möglichkeit einen großen Vorteil zu erreichen.} 8. Rb1 {Der Zug ist viel zu passiv. Die Drohung Dxb2 ist keine echte Drohung.} (8. a4 Qxb2 9. Nb5 Bxd4 10. Nxd6+ {Hier würde weiß alles dominieren. Die schwarzen Figuren haben kein Zusammenspiel.}) 8... Nc6 9. d5 {Weiß möchte keine geschlossenen Spiele. Durch den Vorteil in der Eröffnung möchte Weiß lieber die Linien öffnen und aktives Spiel suchen.} Ne5 10. Nxe5 Bxe5 11. Qd3 {Damit ist die Entwicklung abgeschlossen. Weiß hat nun allle Figuren aktiv in das Spiel eingebunden.} Qd8 {Anna scheut nach wie vor jede Konfrontation und entwickelt sich zurück. Dadurch verpasst sie die Chance etwas Gegenspiel zu erzeugen.} 12. f4 Bg7 {Die Idee die eigenen Figuren über f4 in einen Angriff umzuwandeln ist gut} 13. Rbd1 e5 {Das ist eine Schlüsselstellung. Weiß kann entweder mit d5 vorbeiziehen oder mit dxe5 die Stellung vereinfachen. Sb5 ist noch eine Option} 14. fxe5 {das ist leider die Version die nicht so gut funktioniert aber zum Spielstiel von Hanna passt} (14. Nb5 Bxb5 15. Qxb5+ Kf8 16. Qxb7 Qb8) 14... Bxe5 15. Bf4 Bg7 {Dies ist ein Fehler. Weiß kann nun einen Angriff auf d6 aufbauen} 16. Qf3 {Ist auch nicht verkehrt. Das Bildet mit Turm einen Angriff auf den unterentwickelten f7 Bauer} Qe7 {Die Dame ist überlastet. Sie muss f7 und d6 decken} 17. Bxd6 $1 {Taktisches Element der Ablenkung} Bg4 {Diese Stellung ist interessant. Beide Damen sind angegriffen. Jetzt geht es abzuwägen.} 18. Bxe7 {Leider wurde der sehr starke Zug Lb5+ übersehen. Wenn der König zieht, hängt die Dame mit Schach und wenn er den Läufer dazwischen zieht hängt die Dame so.} (18. Bb5+ Kd8 (18... Bd7 19. Bxe7 Bf6 20. d6 {Mit der kompletten Zerstörung von Schwarz}) 19. Bxe7+ Nxe7 20. Qxg4) 18... Kxe7 $4 {Schwarz gibt die Partie auf} 19. Qxf7+ Kd6 20. Nb5+ $1 {Ein sehr starker Zug} Ke5 21. Qf4# {Ein schönes Matt} 1-0
+
