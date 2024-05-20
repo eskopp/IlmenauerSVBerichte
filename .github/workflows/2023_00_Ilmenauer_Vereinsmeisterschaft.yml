@@ -1,6 +1,5 @@
 name: 2023_00_Ilmenauer_Vereinsmeisterschaft
 
-
 on:
   push:
     branches:
