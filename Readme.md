@@ -1,3 +1,7 @@
+> [!WARNING]  
+> Ich möchte alle Nutzer und Mitwirkenden darauf hinweisen, dass ich den Verein verlassen habe. Aufgrund dieser Veränderung wird es von meiner Seite aus keine weiteren Berichte oder Updates für dieses Repository geben.
+
+
 # Ilmenauer SV
 
 Verschiedene Berichte von Turnieren und anderen Veranstaltungen. Alle Berichte sind in der [Ilmenauer Schachverein Cloud](https://cloud.ilmenauer-schachverein.de) verfügbar.
